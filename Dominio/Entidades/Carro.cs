@@ -11,5 +11,4 @@ namespace Dominio.Entidades
         public Carro(int id, string modelo, string marca, int anoFabricacao, string placa) : base(id, modelo, marca, anoFabricacao, placa)
         {
         }
-    }// Reginaldo, 2024-06-17
 }
