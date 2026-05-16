@@ -10,22 +10,15 @@ namespace Dominio.Entidades
     {
         public int NumeroPortas;
         public bool ArCondicionado;
-        public bool DirecaoHidraulica;
+        public bool DirecaoHidraulica;// TODO: CRIAR ENUMERADOR PARA TIPOS DE DIREÇÃO
         public bool VidrosEletricos;
         public bool TravasEletricas;
-        public bool Alarme;
         public bool Airbag;
-        public bool Abs;
         public bool SensorEstacionamento;
         public bool CameraRe;
         public bool TetoSolar;
         public bool BancosCouro;
         public bool Multimidia;
-        public bool Bluetooth;
-        public double Kilometragem;
-        public bool MotorFlex;
-        public bool CambioAutomatico;
-        public bool RodasLigaLeve;
         public bool FarolDeNeblina;
         public bool RetrovisoresEletricos;
         public bool VolanteMultifuncional;
@@ -34,6 +27,21 @@ namespace Dominio.Entidades
         public Carro(int id, string modelo, string marca, int anoFabricacao, string placa)
             : base(id, modelo, marca, anoFabricacao, placa)
         {
+        }
+
+        protected override void Adicionar()
+        {
+            // Implementação específica para adicionar um carro
+        }
+
+        protected override void Editar()
+        {
+            // Implementação específica para editar um carro
+        }
+
+        protected override void Delete()
+        {
+            // Implementação específica para deletar um carro
         }
     } 
 

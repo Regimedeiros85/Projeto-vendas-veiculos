@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominio.Entidades
 {
-    public class Veiculo
+    public abstract class Veiculo
     {
         private int Id { get; set; }
         private string Modelo { get; set; }
@@ -14,6 +14,15 @@ namespace Dominio.Entidades
         private int AnoFabricacao { get; set; }
         private string Placa { get; set; }
         private bool Disponivel { get; set; } = true;
+        private double Kilometragem { get; set; }
+        private bool FreioABS { get; set; }
+        private bool InjeçaoEletronica { get; set; }
+        private bool Alarme { get; set; }
+        private bool PainelDigital { get; set; }
+        private bool FarolDeLED { get; set; }
+        private bool RodaLigaLeve { get; set; }
+        private bool MotorFlex { get; set; }
+        private bool CambioAutomatico { get; set; }
 
         public Veiculo(int id, string modelo, string marca, int anoFabricacao, string placa)
         {
@@ -24,19 +33,8 @@ namespace Dominio.Entidades
             Placa = placa;
         }
 
-        private void Adicionar()
-        {
-
-        }
-
-        private void Editar()
-        {
-        }
-
-        private void Delete()
-        {
-        }
-
-
+        protected abstract void Adicionar();
+        protected abstract void Editar();
+        protected abstract void Delete();
     }
 }
