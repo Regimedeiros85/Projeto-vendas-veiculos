@@ -13,8 +13,8 @@ namespace Dominio.Entidades
         public double Altura;
         public bool ArCondicionado;
         public EnumTipoCombustivel TipoCombustivel;
-        public string TipoCarroceria;
-        public string TipoFreio;
+        public EnumTipoCarroceria TipoCarroceria;
+        public EnumTipoFreio TipoFreio;
         public bool PossuiReboque;
         public bool PossuiCama;
         

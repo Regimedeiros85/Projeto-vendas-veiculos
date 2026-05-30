@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Dominio.Enumeradores.Enumeradores;
 
 namespace Dominio.Entidades
 {
@@ -10,7 +11,7 @@ namespace Dominio.Entidades
     {
         public int NumeroPortas;
         public bool ArCondicionado;
-        public bool DirecaoHidraulica;// TODO: CRIAR ENUMERADOR PARA TIPOS DE DIREÇÃO
+        public EnumTipoDirecao TipoDirecao;
         public bool VidrosEletricos;
         public bool TravasEletricas;
         public bool Airbag;
