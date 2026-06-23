@@ -102,6 +102,39 @@ namespace Dominio.Enumeradores
             [Description("Frigorífico")] Frigorifico = 5,
             [Description("Plataforma")] Plataforma = 6
         }
+        public enum Genero
+        {
+            [Description("Masculino")] Masculino = 1,
+            [Description("Feminino")] Feminino = 2,
+            [Description("Outro")] Outro = 3
+        }
+        public enum EstadoCivil
+        {
+            [Description("Solteiro(a)")] Solteiro = 1,
+            [Description("Casado(a)")] Casado = 2,
+            [Description("Divorciado(a)")] Divorciado = 3,
+            [Description("Viúvo(a)")] Viuvo = 4
+        }
+        public enum EnumTipoPagamento
+        {
+            [Description("Dinheiro")] Dinheiro = 1,
+            [Description("Cartão de Crédito")] CartaoCredito = 2,
+            [Description("Cartão de Débito")] CartaoDebito = 3,
+            [Description("Transferência Bancária")] TransferenciaBancaria = 4,
+            [Description("Pix")] Pix = 5
+        }
+        public enum Escolaridade
+        {
+            [Description("Ensino Fundamental")] EnsinoFundamental = 1,
+            [Description("Ensino Médio")] EnsinoMedio = 2,
+            [Description("Ensino Superior")] EnsinoSuperior = 3,
+            [Description("Pós-Graduação")] PosGraduacao = 4,
+            [Description("Mestrado")] Mestrado = 5,
+            [Description("Doutorado")] Doutorado = 6
+        }
+     
+        
+        
 
     }
 }
